@@ -1,4 +1,80 @@
 <%- include('../includes/start') %>
 <%- include('../includes/headBody') %>
-<h1>This is the signup page</h1>
+<%- include('../includes/navbar') %>
+<section id="headerSection">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-12 text-lg-left text-center"
+                style=" padding: 0 10px; color: white; margin-top: 10vw">
+                <div class="container formContainer"
+                    style="background-color: white; padding: 25px; border-radius: 5px; box-shadow: 0 0 20px">
+                    <form action="post-work.php" id="home_submit_work" method="post" enctype="multipart/form-data">
+                        <h1 class="sectionHeading m-3">SIGNUP</h1>
+                        <div class="form-group m-3">
+                            <input type="rollNo" name="rollNo" class="form-control" placeholder="Roll Number">
+                        </div>
+                        <div class="form-group m-3">
+                            <input type="text" name="name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group m-3">
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group m-3">
+                            <select name="sem" class="custom-select" id="subject" style="border-width: 2px" required>
+                                <option value="">Semester</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-3">
+                            <select name="branch" class="custom-select" id="subject" style="border-width: 2px" required>
+                                <option value="">Branch</option>
+                                <option value="CS">Computer Engineering</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="EC">Electronics and
+                                    Communication Engineering</option>
+                                <option value="EE">Electrical Engineering</option>
+                                <option value="CE">Civil Engineering</option>
+                                <option value="ME">Mechanical Engineering</option>
+                                <option value="PI">Production and Industrial
+                                    Engineering</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-3">
+                            <select name="sectionNumber" class="custom-select" id="subject" style="border-width: 2px"
+                                required>
+                                <option value="">Section Number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-3">
+                            <input type="password" name="password" class="form-control" id="password"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group m-3">
+                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
+                                placeholder="Confirm Password">
+                        </div>
+                        <div class="p-3">
+                            <input type="submit" name="submit" value="Login" class="btn themeColorHoverBtn btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('../includes/end') %>
 <%- include('../includes/end') %>
