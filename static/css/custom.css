@@ -1,0 +1,68 @@
+.themeColor {
+    background-image: linear-gradient(to left, #C845AA, #770DDB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/***************************  navbar  *******************************/
+
+
+
+/************************  time table  ******************************/
+
+
+.timetableContainer {
+    padding: 10px 30px;
+    width: 100%;
+    overflow-x: auto
+}
+
+.timetable {
+    min-width: 1550px;
+}
+
+.ttBoxContainer {
+    padding: 0;
+}
+
+.ttBox {
+    background-color: rgb(85, 85, 85);
+    margin: 10px;
+    padding: 10px 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.ttBox:hover {
+    margin: -8px;
+    padding: 28px;
+}
+
+.ttBoxH {
+    background-color: rgb(85, 85, 85);
+    margin: 10px;
+    padding: 10px 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/**************************  landing page  **********************************/
+
+.lifeCard {
+    padding: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.lifeCard:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
